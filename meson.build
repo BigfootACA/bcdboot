@@ -1,0 +1,25 @@
+project(
+	'bcdboot',
+	'c',
+	version:'0.1',
+	default_options:[
+		'warning_level=3',
+		'strip=true',
+		'werror=true',
+		'optimization=s',
+		'c_std=gnu11'
+	]
+)
+
+executable(
+	'bcdboot',[
+		'bcdboot.c',
+		'bcdstore.c',
+		'keyval.c'
+	],
+	dependencies:[
+		dependency('uuid'),
+		dependency('blkid'),
+		dependency('hivex')
+	]
+)

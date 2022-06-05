@@ -1,0 +1,5 @@
+bcdboot for update bcd os boot partition under linux
+
+deprecated, merged into simple-init
+
+libraries: blkid uuid hivex
