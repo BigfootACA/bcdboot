@@ -213,7 +213,7 @@ void puts_guid(char*prefix,guid_t guid){
 	char u[UUID_STR_LEN];
 	guid2uuid(&uu,guid);
 	uuid_unparse(uu,u);
-	if(prefix)printf(prefix);
+	if(prefix)printf("%s",prefix);
 	puts(u);
 }
 void out_device(char*msg,device_t*dev){
